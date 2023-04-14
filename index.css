@@ -2,58 +2,88 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	
+}
+
+html, body{
 	background-color: #1d1d1d;
 }
 
 
-body {
-	font-family: "Bebas Neue", sans-serif;
-}
 
 
 #nav{
 	font-family: "Archivo", sans-serif;
 	position: sticky;
+	z-index: 2;
+	background-color: #1d1d1d
 	
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 
 #header{
 	height: 100vh;
-	width: 100vw;
+	
 
 }
 #sem_circle {
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 49.9999%;
 	transform: translate(-50%, -50%);
-	height: 90vh;
-	width: 100vh;
+	height: 100vh;
+	width: 100vw;
 	border-radius: 1200px 1200px 0 0;
 	background-color: #1d1d1d;
 	border: 1px solid white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+h3{
+	font-family: "Archivo", sans-serif;
+	padding-bottom: 0%;
 
 }
-#landing{
-	
+#manual-flex{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+      
 }
+#text{
+	font-family: "Archivo", sans-serif;
+	font-weight: lighter;
+	padding: 0 10%;
+	letter-spacing: 0.5px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+      
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #landing h1{
 /*	padding-left: 1rem;*/
-	font-size: 90px;
+	font-size: 650%;
 	font-family: "Bebas Neue", sans-serif;
 	color: #666666;
 }
@@ -62,4 +92,54 @@ span{
 }
 #portfolio{
 	letter-spacing: 2px;
+}
+
+.card{
+	border: none;
+	margin:5% 0;
+	background-color:#1d1d1d;
+
+	
+}
+.card-body{
+	height: 50vh;
+    
+
+}
+
+
+.crdimg1 {
+    border:none;
+    background-image:url(images/ekko.png);
+    background-size:cover;
+    ;
+    background-position:center;  
+}
+.crdimg2 {
+    border:none;
+    background-image:url(images/ekko.png);
+    background-size:cover;
+    background-position:center; 
+    ;
+}
+
+.cb1,.cb2{
+    background-color:rgb(38, 38, 38, 0.3);
+    opacity:0;
+    transition-duration: 0.5s;
+    
+    
+}
+.cb1:hover,.cb2:hover {
+    opacity: 1 ;
+    background:rgb(38, 38, 38, 0.8);
+    
+  ;
+}
+
+.socmed{
+	margin: 1rem 1rem;
+	padding: 0.5% 1%;
+	border: 1px solid white;
+	border-radius: 25px;
 }
