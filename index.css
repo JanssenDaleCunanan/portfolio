@@ -6,18 +6,301 @@
 }
 
 html, body{
-	background-color: #1d1d1d;
+
+	background-color: #262626;
+/*background-image:url(images/bg.png);
+background-size: contain;
+background-repeat: no-repeat;*/
+	margin: 0;
+	padding: 0;
+
+}
+
+head,  body, .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+	margin: 0;
+	padding: 0;
+}
+
+
+.border, .border-top, .border-bottom, .border-right, .border-left{
+	color: #929292 ;
+}
+
+#vert-text1,#vert-text2,#vert-text3, #vert-text4{
+	transform: rotate(-90deg);
+	transform-origin: center 0;
+	font-family: "Archivo", sans-serif;
+	color: greenyellow;
+
+	font-size: 12px;
+	margin-top: ;
+	margin-bottom: %;
+	
+	
+	letter-spacing: 1px;
+
+}
+
+#vert-text1{
+	margin-top: 0%;
+	margin-bottom: 0%;
+	
+}
+#vert-text2{
+	margin-top: 78%;
+	margin-bottom: 88%;
+}
+#vert-text3{
+	margin-top: 0%;
+	margin-bottom: 20%;
+}
+
+#head span{
+	color: greenyellow;
+}
+#vert-img{
+	
+	
+	width: 15%;
+	margin: 25% 0 0% 18%;
+	padding-bottom: 0;
+}
+
+/***************************ROTATING CIRCLE***************************/
+
+.circle{
+	position: relative;
+	width: 400px;
+	height: 400px;
+/*	background: #ccc;*/
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
+}
+
+#back{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background: url(images/dale-4-1.jpg);
+	background-size: cover;
+	border-radius: 50%;
+	border:0px solid #929292;
+	z-index: 5;
+
+
+}
+
+#circular-text{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	animation: animate 7.5s linear infinite;
+	z-index: 5;
+}
+
+@keyframes animate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+
+}
+
+#circular-text span{
+	position: absolute;
+	left:50%;
+	font-size: 2.9rem;
+	transform-origin: 0 200px;
+	font-family: "Bebas Neue", sans-serif;
+/*	color: #929292;*/
+color: greenyellow;
+	z-index: 5;
+
+}
+
+#rotating-image{
+	z-index: 5;
 }
 
 
 
 
+
+/***************************EXPERIMENT***************************/
+
+
+
+
+/***************************EXPERIMENT  2***************************/
+
+
+
+#circular-text2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	animation: animated 7.5s linear infinite;
+	z-index: 5;
+	
+}
+
+@keyframes animated{
+	0%{
+		transform: rotate(360deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+#circular-text2 span{
+	position: absolute;
+	left:50%;
+	font-size: 2.9rem;
+	transform-origin: 0 200px;
+	font-family: "Bebas Neue", sans-serif;
+	color: #929292;
+	z-index: 5;
+	
+}
+
+
+
+
+/***************************EXPERIMENT 2***************************/
+
+#landing span{
+	color: greenyellow;
+}
+
+
+
+
+#head-upper-row{
+	padding-bottom: 3%;
+	letter-spacing: 3px;
+	color: #929292;
+	padding-top: 1%;
+
+}
+
+#head-upper-row div{
+	color: greenyellow;
+}
+
+#head-text-col-main{
+	height: 100%;
+	width: 100%;
+;
+}
+#head-text-col1{
+	height: 20%;
+	
+	width: 100%;
+	
+
+}
+
+#head-text-col1-alt{
+	height: 20%;
+
+	
+	width: 100%;
+	
+
+}
+#head-text-col2{
+	height: 20%;
+	width: 100%;
+
+
+}
+.row{
+	margin: 0;
+	padding: 0;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+	padding: 0;
+	margin: 0;
+}
+
+
+#head .row{
+/*	background-image:url(images/bg.png);*/
+	margin: 0;
+	padding: 0;
+}
+/*#head-text1, #head-text2, #head-text3{
+	font-family: "Bebas Neue", sans-serif;
+	color: #929292;
+
+font-size: 19vh;
+	line-height: 80%;
+	padding: 0;
+	margin: 0;
+}*/
+#row-portfolio{
+	height: 20%;
+	width: 100%;
+/*padding: 50px 50px 0px 50px;*/
+}
+
+#rect-text{
+	width: 20%;
+	height: 15%;
+	background-color: #929292;
+	margin-top: auto;
+	margin-bottom: auto;
+	color: #929292;
+	z-index: 3;
+
+}
+
+#head-text-col1 p{
+	font-family: "Bebas Neue", sans-serif;
+	color: #929292;
+	font-size: 180px;
+	line-height: 80%;
+	font-weight: bolder;
+}
+
+#head-text-col1-alt p{
+	font-family: "Bebas Neue", sans-serif;
+	color: #929292;
+	font-size: 100px;
+	line-height: 80%;
+	font-weight: bolder;
+
+}
+
+
 #nav{
+
 	font-family: "Archivo", sans-serif;
 	position: sticky;
-	z-index: 2;
-	background-color: #1d1d1d
-	
+	font-weight: bold;
+	z-index:999;
+	background-color: #262626;
+	border: 2px solid white;
+	color: greenyellow;
+
+}
+#nav-dale{
+	color: greenyellow;
+}
+
+.nav-text{
+	padding-left: ;
+	padding-right: 5%;
+}
+
+.nav-text a{
+	color: greenyellow;
 }
 
 .sticky {
@@ -26,38 +309,51 @@ html, body{
   width: 100%;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px;
 }
 
 #header{
 	height: 100vh;
-	
-
 }
+
+
 #sem_circle {
 	position: absolute;
-	top: 50%;
-	left: 49.9999%;
+	top: 89%;
+	left: 50%;
 	transform: translate(-50%, -50%);
-	height: 100vh;
-	width: 100vw;
-	border-radius: 1200px 1200px 0 0;
-	background-color: #1d1d1d;
+	height: 30vh;
+	width: 30vw;
+	border-radius: 800px 800px 0 0;
+	background-color: #262626;
+	z-index: 1;
 	border: 1px solid white;
 }
 
 h3{
 	font-family: "Archivo", sans-serif;
 	padding-bottom: 0%;
+	color: greenyellow;
 
 }
+
 #manual-flex{
 	display: flex;
 	align-items: center;
-    justify-content: center;
+  justify-content: center;
       
+}
+
+
+
+#manual-flex p{
+	font-size: 6rem;
+	line-height: 80%;
+
+}
+#hello{
+	padding: 0 10%;
 }
 #text{
 	font-family: "Archivo", sans-serif;
@@ -81,9 +377,9 @@ h3{
 
 
 
-#landing h1{
+#landing p{
 /*	padding-left: 1rem;*/
-	font-size: 650%;
+	font-size: 10 0%;
 	font-family: "Bebas Neue", sans-serif;
 	color: #666666;
 }
@@ -92,6 +388,10 @@ span{
 }
 #portfolio{
 	letter-spacing: 2px;
+}
+
+#portfolio span{
+	color: greenyellow;
 }
 
 .card{
@@ -137,9 +437,99 @@ span{
   ;
 }
 
+#projects{
+	background-color: greenyellow;
+
+}
+
+#projects h3{
+	color: black;
+}
+
+
+#contact-box{
+	width: 75%;
+	color: greenyellow;
+	font-family: "Archivo", sans-serif;
+	font-weight: bold;
+
+	
+}
+form{
+	background-color: black;
+}
+
+#contact-name{
+		color: greenyellow;
+	font-family: "Archivo", sans-serif;
+	
+}
+#contact-box .form-control{
+	font-family: "Archivo", sans-serif;
+
+}
+#contact-box input, #contact-box textarea{
+	background-color: #929292;
+}
+
+.btn{
+	background-color: greenyellow;
+}
+
+#tools{
+	background-color: greenyellow;
+}
+
+#tools h3{
+	color: black;
+}
+
 .socmed{
 	margin: 1rem 1rem;
 	padding: 0.5% 1%;
 	border: 1px solid white;
 	border-radius: 25px;
+}
+
+#footer span, .socmed{
+	color: greenyellow;
+	border-color: greenyellow;
+}
+/********************MODAL*****************************/
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
