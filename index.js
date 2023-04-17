@@ -67,5 +67,5 @@ const text = document.querySelector('#circular-text h2');
 // ONLOAD
 
  function refresh() {
-  location.replace("./capstone.html")
+  window.replace("./capstone.html")
  }
