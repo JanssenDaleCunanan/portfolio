@@ -491,7 +491,7 @@ form{
 	border-radius: 25px;
 }
 
-#footer span, .socmed{
+#footer span a, .socmed a{
 	color: greenyellow;
 	border-color: greenyellow;
 }
