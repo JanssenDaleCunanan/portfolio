@@ -1293,8 +1293,9 @@ color: white;
 }
 
 
-#projects h3{
-	color: white;
+#projects a{
+	color: white !important;
+	text-decoration: none !important;
 }
 
 
