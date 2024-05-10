@@ -99,29 +99,38 @@ const text = document.querySelector('#circular-text h2');
 const text2 = document.querySelector('#circular-text2 h2');
 
 
- text2.innerHTML = text2.innerText.split("").map(
-  (char,i) =>
-  `<span style="transform:rotate(${i * 6.6}deg)">${char}</span>`
- ).join("")
+text2.innerHTML = text2.innerText.split("").map(
+(char,i) =>
+`<span style="transform:rotate(${i * 6.6}deg)">${char}</span>`
+).join("")
 
 
- const text3 = document.querySelector('#circular-text3 h2');
+const text3 = document.querySelector('#circular-text3 h2');
 
 
- text3.innerHTML = text3.innerText.split("").map(
-  (char,i) =>
-  `<span style="transform:rotate(${i * 7.4}deg)">${char}</span>`
- ).join("")
+text3.innerHTML = text3.innerText.split("").map(
+(char,i) =>
+`<span style="transform:rotate(${i * 7.4}deg)">${char}</span>`
+).join("")
 
 
 
 const text4 = document.querySelector('#circular-text4 h2');
 
 
- text4.innerHTML = text4.innerText.split("").map(
-  (char,i) =>
-  `<span style="transform:rotate(${i * 7.5}deg)">${char}</span>`
- ).join("")
+text4.innerHTML = text4.innerText.split("").map(
+(char,i) =>
+`<span style="transform:rotate(${i * 7.5}deg)">${char}</span>`
+).join("")
+
+
+const text5 = document.querySelector('#circular-text5 h2');
+
+
+text5.innerHTML = text5.innerText.split("").map(
+(char,i) =>
+`<span style="transform:rotate(${i * 7.5}deg)">${char}</span>`
+).join("")
 
 
 
